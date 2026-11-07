@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>health-sync — политика конфиденциальности</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 38rem; margin: 3rem auto; padding: 0 1rem; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  code { background: rgba(127,127,127,.18); padding: .1em .35em; border-radius: 3px; }
+</style>
+<h1>Политика конфиденциальности</h1>
+<p>Приложение <strong>health-sync</strong> — личный инструмент одного человека, владельца
+  аккаунта. Других пользователей у него нет.</p>
+
+<h2>Какие данные запрашиваются</h2>
+<p>Только доступ на чтение к Google Диску владельца — область
+  <code>https://www.googleapis.com/auth/drive.readonly</code>. Фактически читаются четыре папки,
+  куда приложение Health Sync складывает выгрузки с часов: тренировки, пульс, сон и вес.</p>
+
+<h2>Как они используются</h2>
+<p>Файлы копируются на домашний компьютер владельца и разбираются там локально — для расчёта
+  беговых показателей. Больше ни для чего.</p>
+
+<h2>Кому передаются</h2>
+<p>Никому. Данные не передаются третьим лицам, не продаются, не публикуются и никуда не
+  отправляются. Сервера у приложения нет.</p>
+
+<h2>Где хранятся</h2>
+<p>На личном компьютере владельца. Удаляются по его решению. Токен доступа хранится в локальном
+  конфигурационном файле rclone и может быть отозван в любой момент на странице
+  <a href="https://myaccount.google.com/permissions">разрешений аккаунта Google</a>.</p>
+
+<h2>Изменения и связь</h2>
+<p>Если политика изменится, новая версия появится на этой странице.
+  Связь: <a href="mailto:danilas2345@gmail.com">danilas2345@gmail.com</a></p>
